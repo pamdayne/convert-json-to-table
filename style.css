@@ -1,0 +1,193 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
+html{
+    background-color: deepskyblue;
+}
+body{
+    position: relative;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #fff;
+    margin: 5% 15% ;
+}
+.shadow{
+    position: absolute;
+    background-color: dodgerblue;
+    height: 99%;
+    width: 100%;
+    top:25px;
+    left:20px;
+    z-index: -2;   
+}
+
+a{
+    text-decoration: none;
+}
+
+/*
+    TABLE
+*/
+table,
+th, 
+td{
+    border-collapse: collapse;
+    vertical-align:top;
+    padding: 5px;
+    margin: 5px;
+}
+
+th,
+td{
+    text-align: center;
+}
+
+table{
+    border: 1px solid lightgray;
+    outline: lightgray;
+}
+
+table th{
+    border-bottom: 3px solid deepskyblue;
+}
+
+td{
+    text-align: left;
+}
+
+.table-c{
+    padding-bottom: 50px;
+}
+
+/*
+    FORM
+*/
+form{
+    min-width: 20%;
+    max-width: 70%;
+}
+
+form input{
+    width: 100%;
+}
+
+form input{
+    text-transform: uppercase;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid;
+    border-color: deepskyblue;
+}
+
+form input[type="submit"]{
+    background-color: deepskyblue;
+    color: #fff;
+    border-style: none;
+}
+form input[type="submit"]:hover{
+    background-color: dodgerblue;
+    cursor: pointer;
+}
+
+
+/*HEADERS*/
+h1, h4{
+    text-align: center;
+}
+h1{
+    padding-top: 5%;
+    margin-bottom: 0;
+}
+h4{
+    margin-top: 0;
+}
+
+.line{
+    font-size: 20px;
+    padding-top: 10px;
+    margin-left: 10px;
+    line-height: 55px;
+    border-top: 2px solid #000;
+}
+
+.center-this{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*MESSAGE COLORS*/
+.error-msg,
+.success-msg,
+.info-msg{
+    position: absolute;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+    font-weight: bold;
+    bottom: 100px;
+}
+.error-msg{
+    color:red;
+}
+.success-msg{
+    color:green;
+}
+.info-msg{
+    color:orange;
+}
+
+
+.nav{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: royalblue;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+}
+.nav ul{
+    display: block;
+    margin: 0;
+    padding: 10px 0;
+}
+.nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    font-weight: normal;
+    color:white;
+    font-weight: bold;
+}
+.nav a{
+    padding:10px;
+    text-decoration: underline;
+    background-color: transparent;
+    
+    transition: background-color 0.2s ease;
+}
+.nav a:hover{
+    color:white;
+    background-color: cornflowerblue;
+}
+.nav a li:visited{
+    color:white;
+}
+.nav a li:active{
+    color:white;
+}
+
+
+.foot{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.foot p{
+    font-size: 12px;
+    font-weight: normal;
+    color: dimgray;
+    
+}
